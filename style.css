@@ -1,16 +1,6 @@
 html{
     
-    
+    background-color: red;
     text-align: center;
     font-size: larger;
 }
-
-keyframes background {
-    from {
-      background-color: blue;
-    }
-  
-    to {
-        background-color: red;
-    }
-  }
