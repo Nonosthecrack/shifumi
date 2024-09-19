@@ -10,7 +10,6 @@ h1 {
   font-size: 8ch;
 }
 .box {
-  /*background-color: aqua;*/
   height: 150px;
   width: 75%;
   margin-left: auto;
@@ -25,7 +24,27 @@ button {
   height: 3em;
   width: 8em;
   font-size: larger;
-  background-color: blue;
-  color: wheat;
+  background-color: #62b9cb;
+  color: white;
   cursor: pointer;
+  border-radius: 5%;
+}
+
+button:hover {
+  background-color: #caebff;
+  color: #1b4b65;
+}
+button:active {
+  transform: scale(0.97);
+}
+.resultat {
+  background-color: #5facd3;
+  border: 2px solid black;
+  height: 150px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
