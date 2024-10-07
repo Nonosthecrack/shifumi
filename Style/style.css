@@ -1,7 +1,7 @@
 body {
   margin: auto;
   max-width: 1600px;
-  background-image: url(/Image/backgroundImage.jpg);
+  background-image: url(../Image/backgroundImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
