@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --bleu: #135fb7;
+  --bleu_clair: #87c7f5;
+  --box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(to top, var(--bleu), var(--bleu_clair));
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+section {
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw;
+  padding: 3vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  box-shadow: var(--box-shadow);
+}
+
+.Choice {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Choice h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 0.5vw 2.5vw;
+  margin-top: 2vw;
+  border: 0.15vw solid var(--bleu);
+  border-radius: 0.5vw;
+  background-color: var(--bleu);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:focus {
+  background-color: white;
+  color: var(--bleu);
+}
