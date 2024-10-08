@@ -70,3 +70,9 @@ button:focus {
   background-color: white;
   color: var(--bleu);
 }
+
+img {
+  width: 8vw;
+  height: 8vw;
+  margin: 2vw 0;
+}

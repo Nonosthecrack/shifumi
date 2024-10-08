@@ -1,35 +1,13 @@
-const button = document.querySelectorAll("button");
-//selection tout les élement boutton et les stock dans une variable bouton
+const ContenerUserChoice = document.getElementById("User-Choice");
+const ContenerComputerChoice = document.getElementById("Computer-Choice");
+const ContenerResult = document.getAnimations("Result");
 
-for (let i = 0; i < button.length; i++) {
-  //parcours la liste des boutton
-  //ajout d'évenement quand on click sur un bouton
-  button[i].addEventListener("click", () => {
-    //création d'une variable contenant le contenue du boutton cliqué par le joueur
-    const joueur = button[i].innerHTML;
+const Choice = document.querySelectorAll("button");
+let UserChoice;
 
-    //création d'une variable robot qui choisira aléatoirement un des bouttons
-    const robot = button[Math.floor(Math.random() * button.length)].innerHTML;
-
-    let result = "";
-
-    //conditions d'égalité, victoire et défaites
-    if (joueur === robot) {
-      result = "Égalité";
-    } else if (
-      (joueur === "Pierre" && robot === "Ciseaux") ||
-      (joueur === "Ciseaux" && robot === "Feuille") ||
-      (joueur === "Feuille" && robot === "Pierre")
-    ) {
-      result = "Gagné";
-    } else {
-      result = "Perdu";
-    }
-    //mise a jour du contenue HTML de l'element de la classe .resultat
-    document.querySelector(".resultat").innerHTML = `
-  Joueur : ${joueur} </br>
-  Robot : ${robot} <br/>
-  Résultat : ${result}
-  `;
-  });
-}
+Choice.forEach((Choice) =>
+  Choice.addEventListener("click", (e) => {
+    UserChoice = e.target.id;
+    ContenerUserChoice.innerHTML = `<img src="Image/${UserChoice}.png">`;
+  })
+);
