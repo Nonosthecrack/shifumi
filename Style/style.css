@@ -50,7 +50,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5vw;
+  font-size: 1.58vw;
   text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ button:focus {
 }
 
 img {
-  width: 8vw;
-  height: 8vw;
-  margin: 2vw 0;
+  width: 6vw;
+  height: 6vw;
+  margin: 0.5vw 0;
 }
