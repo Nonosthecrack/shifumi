@@ -44,5 +44,4 @@ function win() {
     result = "LOST";
   }
   ContenerResult.innerHTML = result;
-  console.log(result);
 }

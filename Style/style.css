@@ -71,6 +71,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.5s;
+  font-size: 1vw;
 }
 
 button:focus {
@@ -79,7 +80,11 @@ button:focus {
 }
 
 img {
-  width: 6vw;
-  height: 6vw;
+  width: 7%vw;
+  height: 7vw;
   margin: 0.5vw 0;
+}
+
+#Result {
+  font-size: 1.5vw;
 }
