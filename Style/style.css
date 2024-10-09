@@ -27,7 +27,7 @@ h1 {
 }
 
 section {
-  width: 30vw;
+  width: 40vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,14 @@ section {
   text-transform: uppercase;
 }
 
+.Controls {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
 button {
+  width: 8vw;
+  height: 3vw;
   padding: 0.5vw 2.5vw;
   margin-top: 2vw;
   border: 0.15vw solid var(--bleu);
