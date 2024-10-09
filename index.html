@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="shifumi.jpg" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="shortcut icon" href="Image/shifumi.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shifumi</title>
   </head>
   <body>
     <main>
       <h1>SHIFUMI</h1>
-      <div class="box">
-        <button>Pierre</button>
-        <button>Feuille</button>
-        <button>Ciseaux</button>
-      </div>
-      <div class="resultat"></div>
+      <section>
+        <div class="Choice">
+          <h4>You<span id="User-Choice"></span></h4>
+          <h4>Computer<span id="Computer-Choice"></span></h4>
+        </div>
+        <h4 id="Result"></h4>
+        <div class="Controls">
+          <button id="Rock">Rock</button>
+          <button id="Paper">Paper</button>
+          <button id="Cissor">Cissor</button>
+        </div>
+      </section>
     </main>
-    <script src="shifumi.js"></script>
+    <script defer src="Script/shifumi.js"></script>
   </body>
 </html>
